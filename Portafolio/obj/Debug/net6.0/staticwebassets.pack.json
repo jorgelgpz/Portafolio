@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\imagenes\\batman.jpg"
     },
     {
+      "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\meta.png",
+      "PackagePath": "staticwebassets\\imagenes\\meta.png"
+    },
+    {
       "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
