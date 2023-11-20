@@ -17,12 +17,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\amazon.PNG",
+      "PackagePath": "staticwebassets\\imagenes\\amazon.PNG"
+    },
+    {
       "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\batman.jpg",
       "PackagePath": "staticwebassets\\imagenes\\batman.jpg"
     },
     {
       "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\meta.png",
       "PackagePath": "staticwebassets\\imagenes\\meta.png"
+    },
+    {
+      "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\nyt.PNG",
+      "PackagePath": "staticwebassets\\imagenes\\nyt.PNG"
+    },
+    {
+      "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\reddit.PNG",
+      "PackagePath": "staticwebassets\\imagenes\\reddit.PNG"
+    },
+    {
+      "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\steam.PNG",
+      "PackagePath": "staticwebassets\\imagenes\\steam.PNG"
     },
     {
       "Id": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",
