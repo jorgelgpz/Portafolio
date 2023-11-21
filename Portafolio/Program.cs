@@ -1,7 +1,11 @@
+using Portafolio.Servicios;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//Me permite instanciar la clase cada vez que se pida
+builder.Services.AddTransient<RepositorioProyectos>();
 
 var app = builder.Build();
 

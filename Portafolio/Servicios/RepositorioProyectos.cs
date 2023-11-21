@@ -13,7 +13,7 @@ namespace Portafolio.Servicios
                     Titulo = "Amazon",
                     Descripcion = "E-Commerce realizado en ASP.NET Core",
                     Link = "https://amazon.com",
-                    ImagenURL = "/imagenes/amazon.PNG"Z
+                    ImagenURL = "/imagenes/amazon.PNG"
                 },
                 new Proyecto
                 {
