@@ -9,55 +9,30 @@ namespace Portafolio.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IRepositorioProyectos repositorioProyectos;
-        private readonly ServicioDelimitado servicioDelimitado;
-        private readonly ServicioUnico servicioUnico;
-        private readonly ServicioTransitorio servicioTransitorio;
-        private readonly ServicioDelimitado servicioDelimitado2;
-        private readonly ServicioUnico servicioUnico2;
-        private readonly ServicioTransitorio servicioTransitorio2;
 
         public HomeController(ILogger<HomeController> logger,
-            IRepositorioProyectos repositorioProyectos,
-            ServicioDelimitado servicioDelimitado,
-            ServicioUnico servicioUnico,
-            ServicioTransitorio servicioTransitorio,
-            
-            ServicioDelimitado servicioDelimitado2,
-            ServicioUnico servicioUnico2,
-            ServicioTransitorio servicioTransitorio2
+            IRepositorioProyectos repositorioProyectos
             )
         {
             _logger = logger;
             this.repositorioProyectos = repositorioProyectos;
-            this.servicioDelimitado = servicioDelimitado;
-            this.servicioUnico = servicioUnico;
-            this.servicioTransitorio = servicioTransitorio;
-            this.servicioDelimitado2 = servicioDelimitado2;
-            this.servicioUnico2 = servicioUnico2;
-            this.servicioTransitorio2 = servicioTransitorio2;
         }
 
         public IActionResult Index()
         {
-            var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
-            var guidViewModel = new EjemploGUIDViewModel()
-            {
-                Delimitado = servicioDelimitado.ObtenerGuid,
-                Transitorio = servicioTransitorio.ObtenerGuid,
-                Unico = servicioUnico.ObtenerGuid
-            };
+            _logger.LogTrace("Este es un mensaje de trace");
+            _logger.LogDebug("Este es un mensaje de debug");
+            _logger.LogInformation("Este es un mensaje de information");
+            _logger.LogWarning("Este es un mensaje de warning");        
+            _logger.LogError("Este es un mensaje de error");
+            _logger.LogCritical("Este es un mensaje de critical");
 
-            var guidViewModel2 = new EjemploGUIDViewModel()
-            {
-                Delimitado = servicioDelimitado2.ObtenerGuid,
-                Transitorio = servicioTransitorio2.ObtenerGuid,
-                Unico = servicioUnico2.ObtenerGuid
-            };
+
+            var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
+
             var modelo = new HomeIndexViewModel()
             {
                 Proyectos = proyectos,
-                EjemploGUID_1 = guidViewModel,
-                EjemploGUID_2 = guidViewModel2,
             };
             return View(modelo);
         }
