@@ -4,8 +4,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//Me permite instanciar la clase cada vez que se pida
+//Me permite instanciar la clase cada vez que se pida, tiempo de vida de servicio corto
+//AddTransient no necesita compartir datos entre instancias del servicio
+//AddSingleton comparte datos entre otras instancias de otras peticiones http
+//AddScoped comparte datos ente la misma instancia http
 builder.Services.AddTransient<IRepositorioProyectos, RepositorioProyectos>();
+
+builder.Services.AddTransient<ServicioTransitorio>();
+builder.Services.AddScoped<ServicioDelimitado>();
+builder.Services.AddSingleton<ServicioUnico>();
 
 var app = builder.Build();
 
