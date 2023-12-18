@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\Portafolio\\Portafolio\\Portafolio.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\Portafolio.csproj",
       "projectName": "Portafolio",
-      "projectPath": "C:\\Users\\jorge\\Source\\Repos\\Portafolio\\Portafolio\\Portafolio.csproj",
+      "projectPath": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\Portafolio.csproj",
       "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorge\\Source\\Repos\\Portafolio\\Portafolio\\obj\\",
+      "outputPath": "C:\\Users\\jorge\\source\\repos\\Portafolio\\Portafolio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,24 +56,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
