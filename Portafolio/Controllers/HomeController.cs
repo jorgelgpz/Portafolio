@@ -20,12 +20,7 @@ namespace Portafolio.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogTrace("Este es un mensaje de trace");
-            _logger.LogDebug("Este es un mensaje de debug");
             _logger.LogInformation("Este es un mensaje de information");
-            _logger.LogWarning("Este es un mensaje de warning");        
-            _logger.LogError("Este es un mensaje de error");
-            _logger.LogCritical("Este es un mensaje de critical");
 
 
             var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
@@ -37,9 +32,11 @@ namespace Portafolio.Controllers
             return View(modelo);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Proyectos()
         {
-            return View();
+            var proyecto = repositorioProyectos.ObtenerProyectos();
+
+            return View(proyecto);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
